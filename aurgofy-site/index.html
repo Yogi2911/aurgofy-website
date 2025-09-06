@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurgofy | Logo Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    :root {
+      --primary: #ff4081;
+      --bg: #ffffff;
+      --text: #333333;
+      --accent: #3f51b5;
+      --card: #f4f4f4;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+    }
+
+    header h1 {
+      color: #000000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    header h1 img {
+      height: 50px;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #000000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+  background: white;
+  color: var(--accent);
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #ff4081 10%, #ffd740 100%);
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .hero button {
+      background: white;
+      color: var(--accent);
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      border: 2px solid var(--accent);
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background: var(--accent);
+      color: white;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 2rem;
+      padding: 3rem;
+      background: #f9f9f9;
+    }
+    .slider img {
+      height: 180px;
+      width: 200px;
+      border-radius: 10px;
+      border: 2px solid var(--primary);
+    }
+    section {
+      padding: 4rem 2rem;
+    }
+    .services, .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: 2px solid var(--accent);
+      text-align: center;
+    }
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .card button {
+      background: var(--primary);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+    }
+
+    .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: black;
+}
+
+.logo img {
+  height: 50px;
+}
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    form input, form textarea {
+      padding: 1rem;
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--text);
+    }
+    form button {
+      background: var(--accent);
+      padding: 0.8rem;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      background: var(--accent);
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+
+    @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .slider {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .slider img {
+    width: 80%;
+    height: auto;
+  }
+
+  .services, .portfolio-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 600px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+  <img src="logo.png" alt="Aurgofy Logo">
+  <h1>Aurgofy</h1>
+</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Powerful Logos. Affordable Pricing. Designed by Aurgofy.</h2>
+    <p>Get started with premium logo design from just ₹500.</p>
+    <a href="#contact" class="btn">Start for ₹500</a>
+    <a href="#portfolio" class="btn">View Portfolio</a>
+
+  </section>
+
+  <div class="slider">
+    <img src="logo1.png" alt="Logo Sample 1" />
+    <img src="logo2.png" alt="Logo Sample 2" />
+    <img src="logo3.png" alt="Logo Sample 3" />
+    <img src="logo4.png" alt="Logo Sample 4" />
+    <img src="logo5.png" alt="Logo Sample 5" />
+    <img src="logo6.png" alt="Logo Sample 6" />
+  </div>
+
+  <section id="about">
+    <h2>About Aurgofy</h2>
+    <p>Aurgofy blends aura and ego — creativity and identity — to deliver premium yet affordable branding.</p>
+    <p><strong>Mission:</strong> Make high-quality branding accessible to every entrepreneur.</p>
+    <blockquote>"Design is the silent ambassador of your brand." – Founder, <a href="mailto:aurgofy15@gmail.com">aurgofy15@gmail.com</a></blockquote>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>✅ Starter Pack – ₹500</h3>
+        <p>1 Logo Concept<br>1 Revision<br>Transparent PNG</p>
+        <a href="#contact" class="btn">Book Now</a>
+      </div>
+      <div class="card">
+        <h3>✅ Pro Pack – ₹750</h3>
+        <p>2 Logo Concepts<br>2 Revisions<br>PNG + JPEG + Color Variants</p>
+        <a href="#contact" class="btn">Book Now</a>
+      </div>
+      <div class="card">
+        <h3>✅ Elite Pack – ₹1000</h3>
+        <p>3 Logo Concepts<br>Unlimited Revisions<br>Full Brand Kit<br>Social Media DP Logo</p>
+        <a href="#contact" class="btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="work1.png" alt="Portfolio 1" />
+      </div>
+      <div class="portfolio-item">
+        <img src="work2.png" alt="Portfolio 2" />
+      </div>
+      <div class="portfolio-item">
+        <img src="work3.png" alt="Portfolio 3" />
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align: center; margin-bottom: 1rem;">
+    Ready to bring your brand to life? Fill out the form below and we’ll get back to you within 24 hours!
+  </p>
+
+  <!-- Responsive Embedded Google Form -->
+  <div style="max-width: 640px; margin: auto; padding: 20px;">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdx8Ys0ChSyCP84EGB-2bOPAndFSQ312rV-vv4LVWq77JN9jw/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+
+  <!-- Direct Email and Socials -->
+  <div style="text-align: center; margin-top: 2rem;">
+    <p>Email us: <a href="mailto:aurgofy15@gmail.com">aurgofy15@gmail.com</a></p>
+    <p>Follow us:
+      <a href="https://www.instagram.com/aurgofy" target="_blank"><i class='bx bxl-instagram' style="font-size: 24px; color: #ff4081;"></i></a>
+      <a href="https://wa.me/6382034799" target="_blank"><i class='bx bxl-whatsapp' style="font-size: 24px; color: #25D366;"></i></a>
+    </p>
+  </div>
+</section>
+
+
+  
+
+  <footer>
+    <p>&copy; 2025 Aurgofy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
